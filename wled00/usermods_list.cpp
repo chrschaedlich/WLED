@@ -9,7 +9,7 @@
  * || || ||
  * \/ \/ \/
  */
-//#include "../usermods/EXAMPLE_v2/usermod_v2_example.h"
+#include "../usermods/Nema23/nema23.h"
 
 #ifdef USERMOD_BATTERY
   #include "../usermods/Battery/usermod_v2_Battery.h"
@@ -206,12 +206,13 @@
 #endif
 void registerUsermods()
 {
+
 /*
    * Add your usermod class name here
    * || || ||
    * \/ \/ \/
    */
-  //usermods.add(new MyExampleUsermod());
+  usermods.add(new Nema23Mod());
   #ifdef USERMOD_BATTERY
   usermods.add(new UsermodBattery());
   #endif
